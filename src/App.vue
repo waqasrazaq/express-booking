@@ -1,37 +1,41 @@
 <template>
   <v-app>
     <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
+      <img
+              src="http://developer.trivago.com/img/wabi_small.png"
+              height="50px"
+              width="50px"
+
+      />
       <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+      <v-toolbar-title class="headline text-uppercase">
+        <span class="iconify" data-icon="logos-vuetifyjs" data-inline="false"></span>
+        <span>Trivago</span>
+        <span class="font-weight-light">&nbsp;Express Booking</span>
+      </v-toolbar-title>
     </v-toolbar>
 
     <v-content>
-      <HelloWorld/>
+          <search-form @onDataLoad="searchData=$event"></search-form>
+          <search-result :searchData="searchData"></search-result>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import searchForm from './components/SeacrhForm'
+import searchResult from './components/SearchResult'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    searchForm,
+    searchResult
   },
   data () {
     return {
-      //
+      searchData: ''
     }
   }
 }
