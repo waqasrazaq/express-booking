@@ -59,3 +59,15 @@ Great, That's it. Installation process is completed. If there's no error till no
 Full functioning project is deployed at below url
 
 [http://projectxdubai.com/express-booking/](http://projectxdubai.com/express-booking/)
+
+# High level introduction to the project and files structure
+Although the information below on the application structure is very brief, at least it gives a starting point for the developers to work on the project
+
+* express-booking/src/main.js - Initalizes our application by utlising App.vue file and Vuetify plugin
+* express-booking/src/App.vue - Is the main file which controls the application layout. It contains three main section header, filter panel and search result section 
+* express-booking/src/components - Contains all the components created for this application.
+* express-booking/Dokerfile - 
+* express-booking/package.json - Heart of project, contains meta data of the application, and all it's dependencies.
+
+For more details on the overall files structure of the VueJS project, follow this docs https://vuejs.org/v2/guide/#Getting-Started link.
+
