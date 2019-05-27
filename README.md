@@ -55,7 +55,7 @@ $ root@server:~/express-booking# docker run -it -p 8080:80 --rm --name express-b
 Great, That's it. Installation process is completed. If there's no error till now then we're ready to access the application by simply typing the **localhost:8080** in the broswer.
  
 
-# Working Demo 
+# Working demo 
 Full functioning project is deployed at below url
 
 [http://projectxdubai.com/express-booking/](http://projectxdubai.com/express-booking/)
