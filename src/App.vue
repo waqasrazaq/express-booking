@@ -5,7 +5,6 @@
               src="http://developer.trivago.com/img/wabi_small.png"
               height="50px"
               width="50px"
-
       />
       <v-spacer></v-spacer>
       <v-toolbar-title class="headline text-uppercase">
@@ -14,7 +13,6 @@
         <span class="font-weight-light">&nbsp;Express Booking</span>
       </v-toolbar-title>
     </v-toolbar>
-
     <v-content>
           <search-form @onDataLoad="searchData=$event"></search-form>
           <search-result :searchData="searchData"></search-result>
@@ -28,7 +26,6 @@ import searchResult from './components/SearchResult'
 
 export default {
   name: 'App',
-
   components: {
     searchForm,
     searchResult

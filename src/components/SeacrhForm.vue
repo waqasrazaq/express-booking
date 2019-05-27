@@ -49,8 +49,6 @@
                 <v-flex xs12>
                     <v-card-actions>
                         <v-spacer></v-spacer>
-
-
                         <v-btn
                                 :disabled="!valid"
                                 color="success"
@@ -99,14 +97,11 @@
     methods: {
       validate () {
         if (this.$refs.form.validate()) {
-          this.snackbar = true;
           this.performSearch();
         }
       },
       performSearch() {
-
         const searchParams = new URLSearchParams();
-
         searchParams.append("api_version", "1");
         searchParams.append("hotel", '{"item_id": 1,"partner_reference": "abc123"}');
         searchParams.append("start_date", this.startDate);
@@ -129,10 +124,6 @@
           })
           .catch(err => console.log(err));
       }
-      /*,
-      resetValidation () {
-        this.$refs.form.resetValidation()
-      }*/
     }
   }
 </script>
